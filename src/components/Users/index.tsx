@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Action from "../Action";
 import api from "../../services/api";
+import "./styles.css";
 
 interface User {
   name: string;
@@ -84,15 +85,14 @@ const Users = () => {
 
   return (
     <div>
-      <h4>Users</h4>
-      <table>
+      <table className="users-table">
         <thead>
           <tr>
-            <th style={{ width: "20%" }}>Nome</th>
-            <th style={{ width: "20%" }}>CPF</th>
-            <th style={{ width: "20%" }}>Telefone</th>
-            <th style={{ width: "20%" }}>E-mail</th>
-            <th style={{ width: "20%" }}>Ações</th>
+            <th style={{ width: "40%" }}>Nome</th>
+            <th style={{ width: "15%" }}>CPF</th>
+            <th style={{ width: "15%" }}>Telefone</th>
+            <th style={{ width: "15%" }}>E-mail</th>
+            <th style={{ width: "15%" }}>Ações</th>
           </tr>
         </thead>
 
@@ -117,7 +117,12 @@ const Users = () => {
           })}
         </tbody>
       </table>
-      <Link to="/newuser">Cadastrar Novo Usuário</Link>
+
+      <div className="flexEnd">
+        <Link id="btn" to="/newuser" style={{ width: "300px" }}>
+          Novo Usuário
+        </Link>
+      </div>
     </div>
   );
 };

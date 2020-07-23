@@ -3,8 +3,9 @@ import React from "react";
 const Header = () => {
   return (
     <div>
-      <h1>Prova Front End</h1>
-      <h2>Tinnova</h2>
+      <h1>Tinnova</h1>
+      <h3>Prova Front-End</h3>
+      <hr />
     </div>
   );
 };

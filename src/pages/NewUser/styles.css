@@ -1,0 +1,84 @@
+#page-new-user {
+  width: 100%;
+}
+
+#page-new-user form {
+  padding: 15px;
+  max-width: 730px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: black 2px 2px 5px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#page-new-user form h1 {
+  font-size: 36px;
+}
+
+#page-new-user form header {
+  margin-bottom: 50px;
+}
+
+#page-new-user form fieldset {
+  min-inline-size: auto;
+  border: 0;
+  padding: 15px;
+}
+
+#page-new-user form .field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+#page-new-user form .field input[type="text"],
+#page-new-user form .field input[type="email"] {
+  border: none;
+  border-bottom: 1px solid #efeeed;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Roboto";
+}
+
+#page-new-user form .field input[type="text"]:focus,
+#page-new-user form .field input[type="email"]:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+#page-new-user form .field label {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: gray;
+}
+
+#page-new-user form button {
+  width: 300px;
+  height: 56px;
+  background-color: #00c8b3;
+  color: #ffffff;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border: 0;
+  align-self: flex-end;
+
+  margin-bottom: 20px;
+  margin-right: 15px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+#page-new-user form button:hover {
+  opacity: 70%;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  list-style: none;
+}
